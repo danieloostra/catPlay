@@ -1,0 +1,52 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li + li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.unhappy {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    margin: 10px;
+    float: left;
+    padding: 30px;
+    text-align: center;
+    background-color: lightgray;
+    background-image: url("/images/unhappy_cat.png");
+}
+.happy {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    margin: 10px;
+    float: left;
+    padding: 30px;
+    text-align: center;
+    background-color: lightgray;
+    background-image: url("/images/happy_cat.png");
+}

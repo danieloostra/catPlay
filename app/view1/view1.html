@@ -1,0 +1,48 @@
+<p>Welcome to catPlay!!!</p>
+
+<p>Created for the MEAN Stack Hackathon</p>
+
+<p>Instructions/Rules: To play cat play, simply use your mouse to pet the cat images on the next screen. You must have two players to play cat play, you also need to have dexterity for this challenge.</p>
+
+<!-- <img onmouseover="bigCat(this)" onmouseout="littleCat(this)" border="0" src="/images/unhappy_cat.png" alt="meow" width="32" height="32">
+
+<script>
+function bigCat(x) {
+    x.style.height = "64px";
+    x.style.width = "64px";
+}
+function littleCat(x) {
+    x.style.height = "32px";
+    x.style.width = "32px";
+}
+</script> -->
+
+<script type="text/javascript">
+var z = 0;
+var x = 0;
+var y = 0;
+
+function petMe() {
+    document.getElementById("rubbie").innerHTML = z+=1;
+}
+function overMe() {
+    document.getElementById("rubbie1").innerHTML = y+=1;
+}
+function enterMe() {
+    document.getElementById("rubbie2").innerHTML = x+=1;
+}
+</script>
+
+
+<div onmousemove="petMe()" class="unhappy" id="rubbie">
+  <p><br><span>Pet me!</span></p>
+</div>
+<div onmousemove="overMe()" class="happy"  id="rubbie1">
+  <p><br> <span id="rubbie1">Pet me!</span></p>
+</div>
+
+
+<audio controls>
+  <source src="/sounds/meow.wav" type="audio/wav">
+  Your browser does not support the audio tag.
+</audio>
