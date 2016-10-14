@@ -13,6 +13,28 @@
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
   <link rel="stylesheet" href="app.css">
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+
+  <script type="text/javascript">
+
+  var z = 0;
+  var x = 0;
+  var y = 0;
+
+  function overMe(id) {
+    image = document.getElementById(id)
+    image.style.position = "relative";
+    image.style.left = Math.random() * (10 - 0) + 0 +'px';
+    image.style.top = Math.random() * (10 - 0) + 0 +'px';
+    var rubbie = document.getElementById(id).innerHTML = y += 1;
+  }
+
+  // function petMe() {
+  //     document.getElementById("rubbie").innerHTML = z+=1;
+  // }
+  // function enterMe() {
+  //     document.getElementById("rubbie2").innerHTML = x+=1;
+  // }
+  </script>
 </head>
 <body>
   <ul class="menu">

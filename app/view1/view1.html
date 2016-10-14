@@ -1,3 +1,5 @@
+
+
 <p>Welcome to catPlay!!!</p>
 
 <p>Created for the MEAN Stack Hackathon</p>
@@ -17,29 +19,13 @@ function littleCat(x) {
 }
 </script> -->
 
-<script type="text/javascript">
-var z = 0;
-var x = 0;
-var y = 0;
-
-function petMe() {
-    document.getElementById("rubbie").innerHTML = z+=1;
-}
-function overMe() {
-    document.getElementById("rubbie1").innerHTML = y+=1;
-}
-function enterMe() {
-    document.getElementById("rubbie2").innerHTML = x+=1;
-}
-</script>
-
-
-<div onmousemove="petMe()" class="unhappy" id="rubbie">
-  <p><br><span>Pet me!</span></p>
-</div>
-<div onmousemove="overMe()" class="happy"  id="rubbie1">
-  <p><br> <span id="rubbie1">Pet me!</span></p>
-</div>
+  <!-- onmousemove="petMe()"  -->
+  <div onmousemove="overMe('rubbie1')" class="unhappy" id="rubbie1">
+    Pet me!
+  </div>
+  <div onmousemove="overMe('rubbie2')" class="happy"  id="rubbie2">
+    <p><br> <span id="rubbie1">Pet me!</span></p>
+  </div>
 
 
 <audio controls>
